@@ -5,7 +5,7 @@ interface Props {
 }
 export default function ButtonBack({ onClick }: Props) {
   return (
-    <button className='relative flex gap-3 dark:bg-dark-100 py-2 px-6 w-fit rounded' onClick={onClick}>
+    <button className='shadow-md relative flex gap-3 dark:bg-dark-100 py-2 px-6 w-fit rounded ml-5' onClick={onClick}>
         <ArrowLeftIcon className='h-6'/>
         <p>Back</p>
     </button>

@@ -27,8 +27,8 @@ export default function DetailsCard({ selectedCountry, onClick, modalHeight }: P
     };
 
     return (
-        <div className="absolute z-10 flex flex-col justify-center items-center right-1/4 left-1/4 " style={modalStyle}>
-            <div className="dark:bg-dark-100  max-h-screen rounded py-5" >
+        <div className="absolute z-10 flex flex-col justify-center items-center right-1/4 left-1/4 shadow-xl" style={modalStyle}>
+            <div className="bg-zinc-100 dark:bg-dark-100  max-h-screen rounded py-5" >
                 <ButtonBack onClick={onClick} />
                 <div className="flex flex-col justify-center px-6 md:grid md:grid-cols-2 md:place-items-start md:gap-5">
                     <img src={flags.png} alt={flags.alt} className="mt-2 md:place-self-center object-cover" />

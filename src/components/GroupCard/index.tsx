@@ -65,13 +65,13 @@ export default function GroupCard() {
 
     return (
         <div>
+
             <div className="md:flex md:justify-between md:px-14">
 
                 <Search value={searchInput} onChange={handleChangeInput} />
                 <DropDown onChange={handleChangeSelect} options={['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']} />
             </div>
-
-            <div className={` ${isActiveDetails ? 'dark:bg-dark-200/20 opacity-5' : 'dark:bg-dark-200'} flex flex-col justify-center mt-20 items-center gap-10 sm:flex-row flex-wrap sm:justify-around sm:px-12`}>
+            <div className={` ${isActiveDetails ? 'bg-mentor-300 dark:bg-dark-200/20 opacity-5' : 'dark:bg-dark-200'} flex flex-col justify-center mt-20 items-center gap-10 sm:flex-row flex-wrap sm:justify-around sm:px-12`}>
                 {filterCountries.length > 0 &&
                     filterCountries.map((country: any, index) => {
                         return (
