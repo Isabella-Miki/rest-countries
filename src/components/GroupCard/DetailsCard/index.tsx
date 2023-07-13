@@ -1,3 +1,5 @@
+import { CSSProperties } from "react";
+
 import { ICountry } from "../../../interfaces/ICountry";
 import ButtonBack from "../../ButtonBack";
 
@@ -21,7 +23,7 @@ export default function DetailsCard({ selectedCountry, onClick, modalHeight }: P
         borders,
     } = selectedCountry || {};
 
-    const modalStyle = {
+    const modalStyle: CSSProperties = {
         top: `calc(50% + ${modalHeight}px)`,
         transform: `translateY(-50%)`,
     };
@@ -61,7 +63,6 @@ export default function DetailsCard({ selectedCountry, onClick, modalHeight }: P
                     </div>
                 </div>
             </div >
-
         </div>
     )
 }
